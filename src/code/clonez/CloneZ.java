@@ -21,12 +21,7 @@ public class CloneZ extends JavaPlugin {
         if (!exists) {
             new File("plugins/CloneZ").mkdir();
             config.options().header("CloneZ, made by Sushi, Mrbluebear3, Ahmet094, NP98765 and Husky!");
-            config.set("First-rank-name", "Beast");
-            config.set("First-rank-kills-needed", 5);
-            config.set("Second-rank-name", "Boss");
-            config.set("Seocond-rank-kills-needed", 10);
-            config.set("Third-rank-name", "Legend");
-            config.set("Third-rank-kills-needed", 30);
+            
             try {
                 config.save(new File(getDataFolder(), "config.yml"));
             } catch (IOException e) {
